@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(6, 6, 6, 0.998);
+}
+
+.container{
+    width: 50%;
+    min-height: 100vh;
+    background-color: rgba(32, 71, 47, 0.982);
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+form{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+#description, #smt-btn, #input{
+    margin: 0px 50px ;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.355);
+    font-size: 1.2rem;
+    padding: 10px;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+#description{
+    height: 80px;
+    scroll-behavior: unset;
+}
+
+ #smt-btn,.remove{
+    background-color: rgba(3, 3, 3, 0.785);
+    font-family:  'Trebuchet MS', sans-serif;
+    /* letter-spacing: 2px; */
+    box-shadow: none;
+    color: white;
+    border: none;
+    transition: all 0.1s ease-in;
+}
+
+#smt-btn:hover{
+    background-color: rgb(54, 118, 79);
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.355);
+    cursor: pointer;
+}
+
+.task{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(219, 217, 217, 0.471);
+    margin: 20px 50px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 8px;
+    transition: all 0.1s ease-in;
+}
+
+.task:hover{
+    transform: translateY(-5px);
+}
+
+.item{
+    scroll-behavior: smooth;
+    overflow: auto;
+
+}
+
+.title{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.desc{
+    font-size: 18px;
+    color: rgb(51, 50, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 30px;
+    overflow-y: auto;
+}
+
+.remove{
+    width:30px;
+    height:30px;
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 100%;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.1s ease-out;
+    letter-spacing: -3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-minus-circle:before {
+    content: "\f056";
+    font-size: 25px;
+    color: crimson;
+}
+.fa-minus-circle:hover:before {
+    content: "\f056";
+    font-size: 25px;
+    color: blue;
+    cursor: pointer;
+}
+.remove:hover{
+    color: white;
+}
